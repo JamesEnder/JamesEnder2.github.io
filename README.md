@@ -17,9 +17,11 @@
 
         fieldset {
             border: 2px solid #5b0b73;
-            border-radius: 10px;
+            border-radius: 70px;
             padding: 10px;
             margin: 10px 10px;
+            background: none;
+            
         }
 
         button {
@@ -30,21 +32,32 @@
             border-radius: 4px;
             cursor: pointer;
             background-color: #8e44ad; /* Purple color */
-            color: #fff;
+            color: #ffffff;
+        }
+        button:hover {
+            background-color: #2d1936;
+            
+        }
+        
+        button:active{
+            background-color: #444444;
+        }
+        u{
+            color:white;
         }
 
     </style>
 </head>
 <body>
-
+    <u><h2 style="color:white">Manhwa List</h2></u>
     <fieldset id="firstFieldset">
         <div>
-            <h2>I Reincarnated as a Legendary Surgeon</h2>
-            <a href="https://rizzcomic.com/series/r2311170-i-reincarnated-as-a-legendary-surgeon">
-                <img src="https://rizzcomic.com/assets/images/13__surgeon-20-06-2023_11_40_14_PM.webp" alt="I Reincarnated as a Legendary Surgeon" width="210" height="300">
+            <h2>All Football Talents Are Mine</h2>
+            <a href="https://nightscans.net/series/all-football-talents-are-mine/">
+                <img src="https://nightscans.net/wp-content/uploads/2023/11/All-Football-Talents-are-Mine.webp" alt="All Football Talents Are Mine" width="210" height="300">
             </a>
             <br>
-            <strong id="chapters1" style="font-size: x-large;color:#5b0b73">95 Chapters</strong>
+            <strong id="chapters1" style="font-size: x-large;color:#5b0b73">34 Chapters</strong>
             <br><br>
             <button class="addBtn" style="width: 95px;">Add</button>
             <button class="subtractBtn" style="width: 95px;">Subtract</button>
@@ -57,7 +70,7 @@
         <div>
             <h2> Logging 10,000 Years into the Future</h2>
             <a href="https://drakescans.com/series/logging-10000-years-into-the-future/">
-                <img src="https://drakescans.com/wp-content/uploads/2023/12/XTPSnDxOU-193x278.jpg" alt="Another Manhwa Title" width="210" height="300">
+                <img src="https://drakescans.com/wp-content/uploads/2023/12/XTPSnDxOU-193x278.jpg" alt="Apex Future Martial Arts" width="210" height="300">
             </a>
             <br>
             <strong id="chapters2" style="font-size: x-large;color:#5b0b73">83 Chapters</strong>
@@ -100,9 +113,40 @@
         </div>
     </fieldset>
 
+    <fieldset id="fifthFieldset">
+        <div>
+            <h2>My Disciples Cultivate, While I Slack Off!</h2>
+            <a href="https://drakescans.com/series/my-disciples-cultivate-while-i-slack-off/">
+                <img src="https://drakescans.com/wp-content/uploads/2023/10/slack-193x278.jpg" alt="My Disciples Cultivate, While I Slack Off!" width="210" height="300">
+            </a>
+            <br>
+            <strong id="chapters5" style="font-size: x-large;color:#5b0b73">15 Chapters</strong>
+            <br><br>
+            <button class="addBtn" style="width: 95px;">Add</button>
+            <button class="subtractBtn" style="width: 95px;">Subtract</button>
+            <br><br>
+        </div>
+    </fieldset>
+    
+    <fieldset id="sixthFieldset">
+        <div>
+            <h2>I Get Stronger By Doing Nothing</h2>
+            <a href="https://drakescans.com/series/i-get-stronger-by-doing-nothing/">
+                <img src="https://drakescans.com/wp-content/uploads/2023/02/Nothing-193x278.png" alt=" 我躺着就变强
+                " width="210" height="300">
+            </a>
+            <br>
+            <strong id="chapters6" style="font-size: x-large;color:#5b0b73">17 Chapters</strong>
+            <br><br>
+            <button class="addBtn" style="width: 95px;">Add</button>
+            <button class="subtractBtn" style="width: 95px;">Subtract</button>
+            <br><br>
+        </div>
+    </fieldset>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const chapters = [95, 83, 140, 5];
+            const chapters = [95, 83, 140, 5, 15, 17];
             const chaptersElements = document.querySelectorAll('[id^="chapters"]');
             const addBtns = document.querySelectorAll('.addBtn');
             const subtractBtns = document.querySelectorAll('.subtractBtn');
